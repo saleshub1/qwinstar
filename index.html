@@ -7,6 +7,7 @@
     <title>Qwinstar</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ypd0kaa.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
                 <a href="tel:18008729433"><i class="fa fa-phone"></i> 1-800-872-9433</a>
             </div>
             <nav>
-                <a href="#" class="logo"><img src="http://www.roha-bremen.com/typo3conf/ext/auw_viewhelper/Resources/Public/Img/placeholder.png" alt="Qwinstar"></a>
+                <a href="#" class="logo"><img src="img/qwinstar-logo.svg" alt="Qwinstar"></a>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#brands">Brands</a></li>
@@ -58,7 +59,7 @@
             <h2>Qwinstar Companies</h2>
             <div class="brandsGroup">
                 <div class="brandSingle">
-                    <img src="http://www.roha-bremen.com/typo3conf/ext/auw_viewhelper/Resources/Public/Img/placeholder.png" alt="">
+                    <img src="img/3-point-alliance-logo.png" alt="">
                     <div class="brandContent">
                         <h3>3 Point Alliance Canada</h3>
                         <p>Vertically integrated remittance processing and customized payment solutions.</p>
@@ -66,7 +67,7 @@
                     </div>
                 </div>
                 <div class="brandSingle">
-                    <img src="http://www.roha-bremen.com/typo3conf/ext/auw_viewhelper/Resources/Public/Img/placeholder.png" alt="">
+                    <img src="img/cashtech-currency-logo.png" alt="">
                     <div class="brandContent">
                         <h3>CashTech Currency Products Inc.</h3>
                         <p>Complete cash, coin, and check management, including cash counting, sorting, and recycling solutions.</p>
@@ -83,19 +84,19 @@
             <h2>Products We Service</h2>
             <div class="servicesGroup">
                 <div class="serviceSingle">
-                    <img src="http://www.roha-bremen.com/typo3conf/ext/auw_viewhelper/Resources/Public/Img/placeholder.png" alt="">
+                    <img src="img/check-sorters.svg" alt="">
                     <h3>Check Sorters</h3>
                 </div>
                 <div class="serviceSingle">
-                    <img src="http://www.roha-bremen.com/typo3conf/ext/auw_viewhelper/Resources/Public/Img/placeholder.png" alt="">
+                    <img src="img/high-speed-page-scanners.svg" alt="">
                     <h3>High-Speed Page Scanners</h3>
                 </div>
                 <div class="serviceSingle">
-                    <img src="http://www.roha-bremen.com/typo3conf/ext/auw_viewhelper/Resources/Public/Img/placeholder.png" alt="">
+                    <img src="img/statement-printers.svg" alt="">
                     <h3>Statement Printers</h3>
                 </div>
                 <div class="serviceSingle">
-                    <img src="http://www.roha-bremen.com/typo3conf/ext/auw_viewhelper/Resources/Public/Img/placeholder.png" alt="">
+                    <img src="img/automated-letter-openers.svg" alt="">
                     <h3>Automated Letter Openers</h3>
                 </div>
             </div>
@@ -167,7 +168,7 @@
         }
 
         app.smoothScroll = function(){
-            $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) { if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) { var e = $(this.hash); (e = e.length ? e : $("[name=" + this.hash.slice(1) + "]")).length && (t.preventDefault(), $("html, body").animate({ scrollTop: e.offset().top }, 1e3, function () { var t = $(e); if (t.focus(), t.is(":focus")) return !1; t.attr("tabindex", "-1"), t.focus() })); $('header.mobile nav').removeClass('open') } });
+            $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) { if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) { var e = $(this.hash); (e = e.length ? e : $("[name=" + this.hash.slice(1) + "]")).length && (t.preventDefault(), $("html, body").animate({ scrollTop: e.offset().top }, 1e3, function () { var t = $(e); if (t.focus(), t.is(":focus")) return !1; t.attr("tabindex", "-1"), t.focus() })); $('header.mobile nav').removeClass('open'); $('.hamburger').removeClass('open') } });
         }
 
         app.nav = function(){
